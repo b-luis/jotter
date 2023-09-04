@@ -1,11 +1,22 @@
 import { useState, useEffect } from "react";
-import { Start, Header, Notes, SelectedNote } from "./components";
+import { Notes } from "./components";
+import { Landing, Header, SelectedNote, NotesContainer } from "./layout";
 
 const App = () => {
 	const [start, setStart] = useState(false);
 	const [notes, setNotes] = useState("");
-	
-	return <main>{start ? <Header /> : <Start onClick={() => setStart(!start)} />}</main>;
+
+	return (
+		<main>
+			{start ? (
+				<NotesContainer>
+					<Header />
+				</NotesContainer>
+			) : (
+				<Landing onClick={() => setStart(!start)} />
+			)}
+		</main>
+	);
 };
 
 export default App;

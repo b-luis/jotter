@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	font-family: "Poppins", sans-serif;
+* {
+	box-sizing: border-box;
 }
+
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	color: #dfdfdf;
+}
+
+/* body * {
+	outline: 1px solid magenta;
+} */

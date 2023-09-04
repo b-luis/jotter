@@ -1,8 +1,8 @@
-import logo from "../../assets/night-mode.png";
+import logo from "../../assets/images/night-mode.png";
 
 function Start({ onClick }) {
 	return (
-		<div className="align-center flex h-screen flex-col justify-center p-5 text-center">
+		<div className="align-center flex h-screen flex-col justify-center bg-black p-5 text-center">
 			<img className="mx-auto object-contain" src={logo} alt="Jotter Logo" />
 			<p className="text-gray text-gray-200 sm:text-2xl md:text-3xl lg:text-4xl">
 				Where ideas take shape, one note at a time.
