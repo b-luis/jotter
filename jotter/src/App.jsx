@@ -11,6 +11,8 @@ const App = () => {
 			{start ? (
 				<NotesContainer>
 					<Header />
+					<h3 className="px-8 pt-4">List Notes</h3>
+					<Notes />
 				</NotesContainer>
 			) : (
 				<Landing onClick={() => setStart(!start)} />

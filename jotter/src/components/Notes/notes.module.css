@@ -1,0 +1,39 @@
+.notes__container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0.8rem 2rem;
+}
+
+.notes {
+	padding: 1rem;
+	border-radius: 5px;
+	flex: 1;
+	background-color: #f3e5be;
+}
+
+.details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: rgb(122, 122, 122);
+}
+
+@media (min-width: 640px) {
+	.notes__container {
+		padding: 1.5rem;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.notes {
+		width: 45%;
+		flex: 0 1 45%;
+	}
+
+	.notes:nth-child(3n) {
+		flex: 0 1 45%;
+	}
+}
